@@ -6,7 +6,23 @@ body {
     font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   background-color: aliceblue;
+  animation: dis 1.5s;
+    animation-iteration-count: 1;
   }
+
+@keyframes dis {
+    0%{
+        opacity: 0;
+        list-style: none;
+        
+    }
+    
+    100%{
+        opacity: 100;
+        list-style: none;
+       
+    }
+}
   
 nav{
     height: 10%;
@@ -27,12 +43,15 @@ nav div a{
     /* background-color: #f0f0f0; */
     padding: 20px;
     text-align: center;
+    color: black;
   }
   
   h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: black;
   }
+
   a{
     text-decoration: none;
   }
