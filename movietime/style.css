@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    background-color: aliceblue;
+    animation: dis 1.5s;
+      animation-iteration-count: 1;
+    }
+  
+  @keyframes dis {
+      0%{
+          opacity: 0;
+          list-style: none;
+          
+      }
+      
+      100%{
+          opacity: 100;
+          list-style: none;
+         
+      }
+  }
+    
+  nav{
+      height: 10%;
+      background-color: aliceblue;
+  }
+  nav div{
+      padding: 20px;
+  }
+  
+  nav div a{
+      text-decoration: none;
+      color: #333;
+      font-style:italic;
+      font-weight:500;
+  }
+  
+    header {
+      /* background-color: #f0f0f0; */
+      padding: 20px;
+      text-align: center;
+      color: black;
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: black;
+    }
+  
+    a{
+      text-decoration: none;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    
+    .about {
+      text-align: center;
+      padding: 40px;
+    }
+    
+  .app-logo {
+      max-width: 200px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 24px;
+  }
+    
+    .download {
+      background-color: #3d3d3d;
+      text-align: center;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .download-buttons {
+      background-color: #3d3d3d;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .button {
+      /* display: inline-block; */
+      width: 300px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    .android {
+      background-color: #aaf0d1;
+    }
+    .android:hover {
+      background-color: #5ce9ac;
+    }
+    
+    .macos {
+      background-color: #8dc4e9;
+    }
+    .macos:hover {
+      background-color: #61a2ed;
+    }
+    
+    footer {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #download-heading{
+      color: white;
+    }
+  
+    footer a{
+      color: #333;
+    }
+  
+    .License{
+      color: teal;
+    }
+    
+    /* Add media queries for responsive design on smaller screens */
+    @media (max-width: 768px) {
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+  
+      .download-buttons {
+        flex-direction: column;
+      }
+      .button{
+        width: 250px;
+      }
+    
+      .about, .download {
+        padding: 20px;
+      }
+    
+      .about img {
+        max-width: 150px;
+      }
+  
+      .app-logo {
+        max-width: 150px;
+        display: block;
+        margin: 20px auto;
+    }
+    }
+    
